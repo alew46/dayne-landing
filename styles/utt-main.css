@@ -78,7 +78,7 @@ body.utt-landing {
     font-size: 4rem;                /* specifies the size of the font in root em units */
     font-weight: 300;               /* makes the font thinner or lighter weight */
     text-transform: uppercase;      /* transforms the text to be all uppercase lettering */
-    letter-spacing: 0.5rem;         /* puts 0.5 root ems worth of space between each letter */
+    letter-spacing: 0.8rem;         /* puts 0.5 root ems worth of space between each letter */
     margin-bottom: 5%;
 }
 
@@ -86,7 +86,7 @@ body.utt-landing {
     font-family: 'Roboto', sans-serif;
     color: aliceblue;
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -96,6 +96,7 @@ body.utt-landing {
     font-weight: 100;
     text-align: center;
     margin-top: 5%;
+    line-height: 1.5;
 }
 
 .down-chevron {
@@ -104,6 +105,16 @@ body.utt-landing {
     height: 3rem;
     text-align: center;
     left: 48%;
+}
+
+.feature-head {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+}
+
+.feature-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .shirt-ribbon {
@@ -142,8 +153,21 @@ body.utt-landing {
     width: 60%;
 }
 
+.utt-shadow-button {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    bottom: 10%;
+    color: black;
+    width: 200px;
+    left: 23%;
+    border: 4px solid black;
+}
+
 .utt-feature-section {
     position: relative;
+    padding: 2%;
     display: table;
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -170,9 +194,6 @@ body.utt-landing {
 
 }
 
-.icon-one, .icon-two, .icon-three {
-    height: 4rem;
-}
 
  .utt-column {
      float: left;
@@ -188,3 +209,18 @@ body.utt-landing {
  .utt-column.flow-opposite { float: right; }  
 }
 
+
+.ion-tshirt {
+    color: black;
+    font-size: 5rem;
+}
+
+.ion-ios-heart {
+    color: black;
+    font-size: 5rem;
+}
+
+.ion-waterdrop {
+    color: black;
+    font-size: 5rem;
+}
