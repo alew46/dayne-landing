@@ -6,8 +6,8 @@
 
 <style> 
 /* Medium and small screens (640px) */
- @media (min-width: 800px) {
-     html { font-size: 60%; }
+ @media (min-width: 640px) {
+     html { font-size: 80%; }
  }
 
  /* Large screens (1024px) */
@@ -45,7 +45,7 @@ body.utt-landing {
 
 .utt-nav {
     padding: 0.5rem, 0.5rem, 0.5rem, 0.5rem;
-    margin: 2%;
+    margin-bottom: 2%;
 }
 
 .utt-nav .utt-logo {
@@ -65,7 +65,7 @@ body.utt-landing {
 
 .utt-hero {
     position: relative; 
-    min-height: 300px;  /* hero content element must be _at least_ 600 pixels */
+    min-height: 450px;  /* hero content element must be _at least_ 600 pixels */
 }
 
 .utt-hero-head {
@@ -73,7 +73,7 @@ body.utt-landing {
     margin-top: 20%;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     width: 100%;                    /* makes sure the title inhabits the full width of its container */
     text-align: center;             /* aligns text in the horizontal center of the element */
     font-size: 3rem;                /* specifies the size of the font in root em units */
@@ -88,10 +88,10 @@ body.utt-landing {
     color: aliceblue;
     margin-top: 2rem;
     position: relative;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-10%);
+    -moz-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    transform: translateY(-10%);
     width: 100%;
     font-size: 1.8rem;
     font-weight: 100;
@@ -101,11 +101,11 @@ body.utt-landing {
 }
 
 .down-chevron {
-    position: absolute;
-    bottom: 5%;
+    position: relative;
+    bottom: 10%;
     height: 3rem;
     text-align: center;
-    left: 48%;
+    left: 47%;
 }
 
 .feature-head {
