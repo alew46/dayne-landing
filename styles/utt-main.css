@@ -4,15 +4,17 @@
      box-sizing: border-box;
  }
 
- /* Medium and small screens (640px) */
- @media (min-width: 640px) {
-     html { font-size: 112%; }
+<style> 
+/* Medium and small screens (640px) */
+ @media (min-width: 800px) {
+     html { font-size: 60%; }
  }
 
  /* Large screens (1024px) */
  @media (min-width: 1024px) {
-     html { font-size: 120%; }
+     html { font-size: 100%; }
  }
+</style>
 
 html {
      height: 100%; 
@@ -43,6 +45,7 @@ body.utt-landing {
 
 .utt-nav {
     padding: 0.5rem, 0.5rem, 0.5rem, 0.5rem;
+    margin: 2%;
 }
 
 .utt-nav .utt-logo {
@@ -62,20 +65,18 @@ body.utt-landing {
 
 .utt-hero {
     position: relative; 
-    min-height: 500px;  /* hero content element must be _at least_ 600 pixels */
+    min-height: 300px;  /* hero content element must be _at least_ 600 pixels */
 }
 
 .utt-hero-head {
     color: aliceblue;
-    position: absolute;             /* positioning will be explained in a resource */
-    top: 20%;                       /* positioning will be explained in a resource */
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
+    margin-top: 20%;
+    position: relative;
+    top: 50%;
     transform: translateY(-50%);
     width: 100%;                    /* makes sure the title inhabits the full width of its container */
     text-align: center;             /* aligns text in the horizontal center of the element */
-    font-size: 4rem;                /* specifies the size of the font in root em units */
+    font-size: 3rem;                /* specifies the size of the font in root em units */
     font-weight: 300;               /* makes the font thinner or lighter weight */
     text-transform: uppercase;      /* transforms the text to be all uppercase lettering */
     letter-spacing: 0.8rem;         /* puts 0.5 root ems worth of space between each letter */
@@ -85,14 +86,14 @@ body.utt-landing {
 .utt-hero-text {
     font-family: 'Roboto', sans-serif;
     color: aliceblue;
-    position: absolute;
-    bottom: 15%;
+    margin-top: 2rem;
+    position: relative;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 100;
     text-align: center;
     margin-top: 5%;
@@ -173,12 +174,10 @@ body.utt-landing {
 .utt-feature-section {
     position: relative;
     padding: 2%;
-    display: table;
-    width: 100%;
+    text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    text-align: center;
 }
 
  .utt-container {
@@ -189,7 +188,6 @@ body.utt-landing {
 .utt-feature {
     display: table-cell;
     position: relative;
-    width: 33.3%;
     padding: 2rem;
     text-align: center;
 }
@@ -209,7 +207,7 @@ body.utt-landing {
  .utt-column.full { width: 100%; }
  .utt-column.two-thirds { width: 66.7%; }
  .utt-column.half { width: 50%; }
- .utt-column.third { width: 33.3%; }
+ .utt-column.third { width: 33.3% }
  .utt-column.fourth { width: 25%; }
  .utt-column.flow-opposite { float: right; }  
 }
@@ -228,4 +226,14 @@ body.utt-landing {
 .ion-waterdrop {
     color: black;
     font-size: 5rem;
+}
+
+.clearfix::before,
+.clearfix::after {
+   content: " ";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
 }
