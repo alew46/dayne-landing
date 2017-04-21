@@ -130,8 +130,8 @@ body.utt-landing {
 
 .shirt-ribbon-head {
     color: black;
-    position: absolute;             /* positioning will be explained in a resource */
-    top: 20%;                       /* positioning will be explained in a resource */
+    position: relative;             /* positioning will be explained in a resource */
+    margin-top: 9%;                       /* positioning will be explained in a resource */
     -webkit-transform: translateY(-20%);
     -moz-transform: translateY(-20%);
     -ms-transform: translateY(-20%);
@@ -145,24 +145,25 @@ body.utt-landing {
     margin-bottom: 5%}
 
 .shirt-ribbon-text {
-    position: absolute;
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: center;
-    top: 40%;
+    margin-bottom: 5%;
     color: black;
     width: 60%;
 }
 
 .utt-shadow-button {
-    position: absolute;
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-align: center;
     bottom: 15%;
     color: black;
     width: 200px;
-    left: 23%;
+    margin-bottom: 2%;
+    margin-left: 20%;
     border: 4px solid black;
 }
 
@@ -226,6 +227,42 @@ body.utt-landing {
 .ion-waterdrop {
     color: black;
     font-size: 5rem;
+}
+
+.utt-photos-section {
+    position: relative;
+    min-height: 300px;
+    background-color: black;
+}
+
+.utt-photo-1 {
+    float: left;
+    width: 33.3%;
+    height: 300px;
+    background-image: url(/assets/images/DSC_0291.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.utt-photo-2 {
+    float: left;
+    width: 33.3%;
+    height: 300px;
+    background-image: url(/assets/images/DSC_0197.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.utt-photo-3 {
+    float: left;
+    width: 33.3%;
+    height: 300px;
+    background-image: url(/assets/images/DSC_0048.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .clearfix::before,
