@@ -142,7 +142,8 @@ body.utt-landing {
     font-weight: 300;               /* makes the font thinner or lighter weight */
     text-transform: uppercase;      /* transforms the text to be all uppercase lettering */
     letter-spacing: 0.5rem;         /* puts 0.5 root ems worth of space between each letter */
-    margin-bottom: 5%}
+    margin-bottom: 2%;
+}
 
 .shirt-ribbon-text {
     position: relative;
@@ -150,6 +151,8 @@ body.utt-landing {
     font-weight: 300;
     text-align: center;
     margin-bottom: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
     color: black;
     width: 60%;
 }
