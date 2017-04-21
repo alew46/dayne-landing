@@ -274,3 +274,18 @@ body.utt-landing {
 .clearfix::after {
    clear: both;
 }
+
+.utt-feature-wrapper {
+    overflow: hidden;
+}
+
+.utt-feature-one {
+    float:left;
+    width: 33.3%;
+}
+
+.utt-feature-two {
+    width: 33.3%;
+    overflow: hidden;
+
+}
