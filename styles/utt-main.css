@@ -8,6 +8,7 @@
 /* Medium and small screens (640px) */
  @media (min-width: 640px) {
      html { font-size: 80%; }
+     .testi-wrapper { width: 100%; clear: both; }
  }
 
  /* Large screens (1024px) */
@@ -119,10 +120,11 @@ body.utt-landing {
 }
 
 .shirt-ribbon {
-    position: absolute;
+    position: relative;
     width: 100%;
-    min-height: 350px;
+    min-height: 400px;
     background-image: url(/assets/images/shirt%20ribbon.jpg);
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -131,18 +133,20 @@ body.utt-landing {
 .shirt-ribbon-head {
     color: black;
     position: relative;             /* positioning will be explained in a resource */
-    margin-top: 9%;                       /* positioning will be explained in a resource */
     -webkit-transform: translateY(-20%);
     -moz-transform: translateY(-20%);
     -ms-transform: translateY(-20%);
     transform: translateY(-20%);
-    width: 60%;                    /* makes sure the title inhabits the full width of its container */
+    width: 60%;                     /* makes sure the title inhabits the full width of its container */
     text-align: center;             /* aligns text in the horizontal center of the element */
     font-size: 2rem;                /* specifies the size of the font in root em units */
     font-weight: 300;               /* makes the font thinner or lighter weight */
     text-transform: uppercase;      /* transforms the text to be all uppercase lettering */
     letter-spacing: 0.5rem;         /* puts 0.5 root ems worth of space between each letter */
-    margin-bottom: 5%}
+    padding-top: 9%;
+    margin-top: 0px;
+    margin-bottom: 5%
+}
 
 .shirt-ribbon-text {
     position: relative;
@@ -288,4 +292,31 @@ body.utt-landing {
     width: 33.3%;
     overflow: hidden;
 
+}
+
+.utt-testimonials {
+    position: relative; 
+    min-height: 200px; 
+    margin-top:0px; 
+    background-color: light-grey;
+    padding: 2% 2%;
+    text-align: center;
+}
+
+.testi-wrapper {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    float: left;
+    position: relative;
+    width: 33.3%;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#utt-test-header {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #696969;
+    letter-spacing: 0.2rem;
 }
